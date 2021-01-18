@@ -31,4 +31,28 @@ export default {
 .layout-main {
   padding: 40px;
 }
+@media (max-width: 768px) {
+  body {
+    .layout-header {
+      padding: 0 20px;
+    }
+    .layout-body {
+      padding-left: 0;
+    }
+    .layout-main {
+      margin-top: 40px;
+      padding: 20px;
+    }
+    .layout-sidebar {
+      position: static;
+      width: 100%;
+      .sidebar-item-title {
+        margin-left: 20px;
+      }
+      .layout-sidebar-menu {
+        border-right: 0;
+      }
+    }
+  }
+}
 </style>

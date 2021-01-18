@@ -52,7 +52,7 @@ export default {
 }
 </script>
 
-<style lang='less' scoped>
+<style lang='less'>
 .layout-sidebar {
   position: fixed;
   top: 60px;
@@ -90,6 +90,7 @@ export default {
 }
 .layout-sidebar-menu {
   padding-top: 20px;
+  height: 100%;
   box-sizing: border-box;
 }
 </style>

@@ -19,8 +19,9 @@ export default {
 }
 </script>
 
-<style lang="less" scoped>
+<style lang="less">
 .layout-header {
+  box-sizing: border-box;
   display: flex;
   align-items: center;
   position: fixed;
