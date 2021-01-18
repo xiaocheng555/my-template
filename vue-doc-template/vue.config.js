@@ -1,5 +1,5 @@
 const md = require('markdown-it')()
-
+const isProduction = process.env.NODE_ENV === 'production'
 const wrap = function (render) {
   return function () {
     return render.apply(this, arguments)
@@ -9,6 +9,7 @@ const wrap = function (render) {
 }
 
 module.exports = {
+  publicPath: isProduction ? '././' : '/',
   chainWebpack: (config) => {
     config.module
       .rule('md')
