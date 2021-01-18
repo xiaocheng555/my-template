@@ -3,6 +3,9 @@
     <a href="javascript:;" class="layout-header-logo">
       {{ logo }}
     </a>
+    <div class="layout-header-right">
+      <a class="github-icon" href="https://github.com/xiaocheng555/my-template/tree/master/vue-doc-template" target="_blank"></a>
+    </div>
   </div>
 </template>
 
@@ -38,5 +41,17 @@ export default {
   font-weight: 600;
   font-family: Avenir,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
   color: rgba(0,0,0,.85);
+}
+.layout-header-right {
+  flex: 1;
+  text-align: right;
+}
+.github-icon {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
+  background: url('~@/assets/icons/github.svg') no-repeat center center;
+  background-size: cover;
 }
 </style>

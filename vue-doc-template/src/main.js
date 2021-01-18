@@ -4,7 +4,7 @@ import router from './router'
 import ElementUI from 'element-ui'
 import DemoBlock from './components/demoBlock'
 import 'element-ui/lib/theme-chalk/index.css'
-import './assets/index.less'
+import './assets/css/index.less'
 
 Vue.config.productionTip = false
 
