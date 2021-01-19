@@ -1,22 +1,23 @@
 <template>
   <div class="layout-header">
-    <a href="javascript:;" class="layout-header-logo">
+    <a href="/" class="layout-header-logo">
       {{ logo }}
     </a>
     <div class="layout-header-right">
-      <a class="github-icon" href="https://github.com/xiaocheng555/my-template/tree/master/vue-doc-template" target="_blank"></a>
+      <a class="github-icon" :href="githubUrl" target="_blank"></a>
     </div>
   </div>
 </template>
 
 <script>
-import { logo } from '../config'
+import { logo, githubUrl } from '../config'
 
 export default {
   name: 'layout-header',
   data () {
     return {
-      logo
+      logo,
+      githubUrl
     }
   }
 }

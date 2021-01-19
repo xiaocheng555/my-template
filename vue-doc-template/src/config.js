@@ -1,6 +1,9 @@
 // logo配置
 export const logo = 'Doc'
 
+// github地址
+export const githubUrl = 'https://github.com/xiaocheng555/my-template/tree/master/vue-doc-template'
+
 // 菜单配置
 export const menus = [
   {
@@ -9,7 +12,7 @@ export const menus = [
     children: [
       {
         title: '安装',
-        path: '/installation'
+        path: '/home'
       }
     ]
   },
